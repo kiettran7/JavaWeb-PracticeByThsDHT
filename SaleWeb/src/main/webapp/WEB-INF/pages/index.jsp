@@ -37,13 +37,18 @@
                 </div>
             </nav>
         </header>
-
-        <div class="list-group">
+        <div class="row justify-content-md" style="padding-top: 12px;">
             <c:forEach items="${products}" var="p"> 
-                <a href="#" class="list-group-item list-group-item-action">${p.id} - ${p.name}</a>
+                <div class="card m-2" style="width: 20%;">
+                    <img class="card-img-top" src="${p.image}" alt="${p.name}">
+                    <div class="card-body">
+                        <h4 class="card-title">${p.name}</h4>
+                        <p class="card-text">${p.manufacturer}</p>
+                        <a href="/" class="btn btn-primary">See Details</a>
+                    </div>
+                </div>
             </c:forEach>
         </div>
-        
         <footer></footer>
     </body>
 </html>
