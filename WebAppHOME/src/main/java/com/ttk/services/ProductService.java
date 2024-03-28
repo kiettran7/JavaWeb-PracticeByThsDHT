@@ -1,0 +1,18 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.ttk.services;
+
+import com.ttk.pojo.Product;
+import java.util.List;
+import java.util.Map;
+
+/**
+ *
+ * @author kitj3
+ */
+public interface ProductService {
+    List<Product> getProducts(Map<String, String> params);
+    public void addOrUpdate(Product p);
+}
